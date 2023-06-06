@@ -1,0 +1,23 @@
+.container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.6;
+}
+.icon:hover {
+  opacity: 1;
+  scale: 1.2;
+}
