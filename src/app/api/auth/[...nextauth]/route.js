@@ -8,9 +8,9 @@ import bcrypt from "bcryptjs";
 const handler = NextAuth({
   providers: [
     GoogleProvider({
-      clientId:
-        "535156617894-icsnoo48erlgivaqpscrb573r89ma1hq.apps.googleusercontent.com",
-      clientSecret: "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",
+      clientId: process.env.CLIENT_ID
+        ,
+      clientSecret: process.env.CLIENT_SECRET,
     }),
     CredentialsProvider({
       id: "credentials",
